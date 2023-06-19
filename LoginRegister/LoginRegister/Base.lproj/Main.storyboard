@@ -101,7 +101,7 @@
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal">
-                                                    <imageReference key="image" image="applelogo" catalog="system" symbolScale="medium" renderingMode="original"/>
+                                                    <imageReference key="image" image="apple.logo" catalog="system" symbolScale="medium" renderingMode="original"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="appleSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jeh-As-C7j"/>
@@ -154,8 +154,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="361" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SyL-cV-iDK">
-                                <rect key="frame" x="0.0" y="0.0" width="361" height="159.66666666666666"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SyL-cV-iDK">
+                                <rect key="frame" x="0.0" y="0.0" width="361" height="189.66666666666666"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lkZ-UJ-voA">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
@@ -163,12 +163,12 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="krN-LG-o0R">
-                                        <rect key="frame" x="0.0" y="44" width="361" height="34"/>
+                                        <rect key="frame" x="0.0" y="54" width="361" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBW-au-g0x">
-                                        <rect key="frame" x="0.0" y="88" width="361" height="28.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="108" width="361" height="28.333333333333343"/>
                                         <color key="tintColor" systemColor="secondaryLabelColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
@@ -179,7 +179,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEA-Kr-j6C">
-                                        <rect key="frame" x="0.0" y="126.33333333333333" width="361" height="33.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="156.33333333333334" width="361" height="33.333333333333343"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -224,8 +224,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="361" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gaq-WF-8eb">
-                                <rect key="frame" x="0.0" y="0.0" width="361" height="208.66666666666666"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gaq-WF-8eb">
+                                <rect key="frame" x="0.0" y="0.0" width="361" height="228.66666666666666"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Blo-EE-4gf">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
@@ -233,17 +233,17 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uYL-qK-LUP">
-                                        <rect key="frame" x="0.0" y="44" width="361" height="34"/>
+                                        <rect key="frame" x="0.0" y="49" width="361" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rgh-Sm-WNw">
-                                        <rect key="frame" x="0.0" y="88" width="361" height="34"/>
+                                        <rect key="frame" x="0.0" y="98" width="361" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZ8-Dy-wfM">
-                                        <rect key="frame" x="0.0" y="132" width="361" height="33.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="147" width="361" height="33.333333333333343"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -255,7 +255,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jeK-7u-nzK">
-                                        <rect key="frame" x="0.0" y="175.33333333333334" width="361" height="33.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="195.33333333333334" width="361" height="33.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By creating accout, you are agree to our" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQL-Yi-JJU">
                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="13.333333333333334"/>
@@ -306,7 +306,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="applelogo" catalog="system" width="105" height="128"/>
+        <image name="apple.logo" catalog="system" width="105" height="128"/>
         <image name="facebook" width="512" height="512"/>
         <image name="google" width="512" height="512"/>
         <namedColor name="AccentColor">
