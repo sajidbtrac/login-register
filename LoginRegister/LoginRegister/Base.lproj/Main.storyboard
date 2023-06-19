@@ -39,7 +39,7 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnQ-zQ-b8u">
-                                <rect key="frame" x="16" y="246.66666666666663" width="361" height="300"/>
+                                <rect key="frame" x="16" y="256.66666666666669" width="361" height="300.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="0ci-hC-lvM"/>
                                 </constraints>
@@ -48,16 +48,16 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SVw-X7-Pa8">
-                                <rect key="frame" x="16" y="246.66666666666663" width="361" height="300"/>
+                                <rect key="frame" x="16" y="256.66666666666669" width="361" height="300.00000000000006"/>
                                 <connections>
                                     <segue destination="baE-K2-GH8" kind="embed" id="WV8-ow-VAC"/>
                                 </connections>
                             </containerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EzR-k6-KTZ">
-                                <rect key="frame" x="16" y="626.66666666666663" width="361" height="42.333333333333371"/>
+                                <rect key="frame" x="16" y="636.66666666666663" width="361" height="42.333333333333371"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Others sign in options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03d-l6-p31">
-                                        <rect key="frame" x="118.33333333333334" y="0.0" width="124.33333333333334" height="14.333333333333334"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other sign up options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03d-l6-p31">
+                                        <rect key="frame" x="119.33333333333334" y="0.0" width="122.33333333333334" height="14.333333333333334"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
@@ -73,6 +73,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="facebook"/>
+                                                <connections>
+                                                    <action selector="facebookSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZ4-WQ-3g7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFx-08-AKG">
                                                 <rect key="frame" x="40" y="0.0" width="20" height="20"/>
@@ -84,6 +87,9 @@
                                                 <state key="normal" image="google">
                                                     <color key="titleColor" name="AccentColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="googleSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9YG-pL-YQu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZx-Rb-f92">
                                                 <rect key="frame" x="80" y="0.0" width="20" height="20"/>
@@ -97,6 +103,9 @@
                                                 <state key="normal">
                                                     <imageReference key="image" image="applelogo" catalog="system" symbolScale="medium" renderingMode="original"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="appleSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jeh-As-C7j"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -116,7 +125,7 @@
                             <constraint firstItem="EzR-k6-KTZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Q2h-yn-zwZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wnQ-zQ-b8u" secondAttribute="trailing" constant="16" id="Rs8-mS-H2s"/>
                             <constraint firstItem="SVw-X7-Pa8" firstAttribute="centerX" secondItem="wnQ-zQ-b8u" secondAttribute="centerX" id="Uuc-sD-zOb"/>
-                            <constraint firstItem="wnQ-zQ-b8u" firstAttribute="top" secondItem="Rdq-u1-8wB" secondAttribute="bottom" constant="10" id="Xyk-m6-jQF"/>
+                            <constraint firstItem="wnQ-zQ-b8u" firstAttribute="top" secondItem="Rdq-u1-8wB" secondAttribute="bottom" constant="20" id="Xyk-m6-jQF"/>
                             <constraint firstItem="EzR-k6-KTZ" firstAttribute="top" secondItem="wnQ-zQ-b8u" secondAttribute="bottom" constant="80" id="eGq-00-c4R"/>
                             <constraint firstItem="Rdq-u1-8wB" firstAttribute="top" secondItem="IaC-mg-Zxx" secondAttribute="bottom" constant="40" id="fvR-hC-F2T"/>
                             <constraint firstItem="SVw-X7-Pa8" firstAttribute="width" secondItem="wnQ-zQ-b8u" secondAttribute="width" id="gWT-sI-MTO"/>
@@ -137,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="-69.465648854961827" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="mBQ-3h-hb6">
             <objects>
-                <viewController id="tUN-8O-TND" sceneMemberID="viewController">
+                <viewController id="tUN-8O-TND" customClass="LoginViewController" customModule="LoginRegister" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zDc-hx-96Z">
                         <rect key="frame" x="0.0" y="0.0" width="361" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,6 +174,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption1"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="forgotPasswordButtonPressed:" destination="tUN-8O-TND" eventType="touchUpInside" id="eOt-VM-STY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEA-Kr-j6C">
                                         <rect key="frame" x="0.0" y="126.33333333333333" width="361" height="33.333333333333329"/>
@@ -174,6 +186,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Log In">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="tUN-8O-TND" eventType="touchUpInside" id="1ZD-VH-zHa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -192,15 +207,19 @@
                             <constraint firstItem="Beo-fg-c44" firstAttribute="trailing" secondItem="SyL-cV-iDK" secondAttribute="trailing" id="fVN-bE-Raw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="lkZ-UJ-voA" id="uXz-xs-aha"/>
+                        <outlet property="passwordTextField" destination="krN-LG-o0R" id="iXB-qN-2Gc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHX-LH-IIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1018" y="-138"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="fmt-a1-ejd">
             <objects>
-                <viewController id="baE-K2-GH8" sceneMemberID="viewController">
+                <viewController id="baE-K2-GH8" customClass="RegisterViewController" customModule="LoginRegister" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="51V-Xa-y0z">
                         <rect key="frame" x="0.0" y="0.0" width="361" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,6 +250,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Register">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="registerButtonPressed:" destination="baE-K2-GH8" eventType="touchUpInside" id="Tit-id-qhK"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jeK-7u-nzK">
                                         <rect key="frame" x="0.0" y="175.33333333333334" width="361" height="33.333333333333343"/>
@@ -251,6 +273,9 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption2"/>
                                                     <color key="baseForegroundColor" systemColor="secondaryLabelColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="termsAndConditions:" destination="baE-K2-GH8" eventType="touchUpInside" id="fCB-pi-IeH"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -261,6 +286,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qvh-xV-EAx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gaq-WF-8eb" firstAttribute="top" secondItem="51V-Xa-y0z" secondAttribute="top" id="ddE-a2-Jb2"/>
@@ -268,6 +294,11 @@
                             <constraint firstItem="gaq-WF-8eb" firstAttribute="leading" secondItem="51V-Xa-y0z" secondAttribute="leading" id="x8G-a0-6S2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="Rgh-Sm-WNw" id="oDE-fQ-51O"/>
+                        <outlet property="emailTextField" destination="Blo-EE-4gf" id="Yfx-1c-i7E"/>
+                        <outlet property="passwordTextField" destination="uYL-qK-LUP" id="Vh4-Mf-eSj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LBr-1F-CsQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

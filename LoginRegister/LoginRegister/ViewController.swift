@@ -28,6 +28,16 @@ class ViewController: UIViewController {
         }
     }
     
-
+    @IBAction func facebookSignup(_ sender: Any) {
+        
+    }
+    
+    @IBAction func googleSignup(_ sender: Any) {
+        
+    }
+    
+    @IBAction func appleSignup(_ sender: Any) {
+        
+    }
 }
 
