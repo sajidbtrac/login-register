@@ -37,9 +37,9 @@ class RegisterViewController: UIViewController {
         passwordTextField.addBottomBorder()
         confirmPasswordTextField.addBottomBorder()
     }
-    @IBAction func registerButtonPressed(_ sender: Any) {
-    }
     
-    @IBAction func termsAndConditions(_ sender: Any) {
+    
+    @IBAction func registerButtonPressed(_ sender: Any) {
+        
     }
 }
