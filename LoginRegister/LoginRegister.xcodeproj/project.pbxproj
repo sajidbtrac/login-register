@@ -15,6 +15,7 @@
 		5BB1357C2A3F14E300B3A80D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1357A2A3F14E300B3A80D /* LaunchScreen.storyboard */; };
 		5BBDCCF72A40065A00B0F874 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBDCCF62A40065A00B0F874 /* LoginViewController.swift */; };
 		5BBDCCF92A40067900B0F874 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBDCCF82A40067900B0F874 /* RegisterViewController.swift */; };
+		5BBDCCFD2A40141100B0F874 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBDCCFC2A40141100B0F874 /* UITextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5BB1357D2A3F14E300B3A80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BBDCCF62A40065A00B0F874 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5BBDCCF82A40067900B0F874 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5BBDCCFC2A40141100B0F874 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				5BBDCCF62A40065A00B0F874 /* LoginViewController.swift */,
+				5BBDCCFA2A4013B500B0F874 /* Extensions */,
 				5BBDCCF82A40067900B0F874 /* RegisterViewController.swift */,
 				5BB1356F2A3F14DE00B3A80D /* AppDelegate.swift */,
 				5BB135712A3F14DE00B3A80D /* SceneDelegate.swift */,
@@ -71,6 +74,14 @@
 				5BB1357D2A3F14E300B3A80D /* Info.plist */,
 			);
 			path = LoginRegister;
+			sourceTree = "<group>";
+		};
+		5BBDCCFA2A4013B500B0F874 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5BBDCCFC2A40141100B0F874 /* UITextFieldExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BBDCCF72A40065A00B0F874 /* LoginViewController.swift in Sources */,
+				5BBDCCFD2A40141100B0F874 /* UITextFieldExtension.swift in Sources */,
 				5BBDCCF92A40067900B0F874 /* RegisterViewController.swift in Sources */,
 				5BB135742A3F14DE00B3A80D /* ViewController.swift in Sources */,
 				5BB135702A3F14DE00B3A80D /* AppDelegate.swift in Sources */,

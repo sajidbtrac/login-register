@@ -20,6 +20,10 @@ class LoginViewController: UIViewController {
         NSAttributedString(string: " Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 99.0/255.0, green: 99/255.0, blue: 102.0/255.0, alpha: 0.6)])
         passwordTextField.attributedPlaceholder =
         NSAttributedString(string: " Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 99.0/255.0, green: 99/255.0, blue: 102.0/255.0, alpha: 0.6)])
+        
+        // add custom bottom border with extension
+        emailTextField.addBottomBorder()
+        passwordTextField.addBottomBorder()
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
