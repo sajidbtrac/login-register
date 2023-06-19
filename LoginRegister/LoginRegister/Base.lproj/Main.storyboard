@@ -51,9 +51,6 @@
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnQ-zQ-b8u">
                                 <rect key="frame" x="16" y="304.66666666666674" width="361" height="339.33333333333326"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="0ci-hC-lvM"/>
-                                </constraints>
                                 <connections>
                                     <segue destination="tUN-8O-TND" kind="embed" id="6OC-9c-SFf"/>
                                 </connections>

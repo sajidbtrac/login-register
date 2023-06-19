@@ -15,19 +15,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
+        
         self.view.bringSubviewToFront(loginSegmentView)
     }
+    
+    @objc func hideKeyboard() {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func segmentAction(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
+            hideKeyboard()
             self.view.bringSubviewToFront(loginSegmentView)
         case 1:
+            hideKeyboard()
             self.view.bringSubviewToFront(registerSegmentView)
             
             //adjustForKeyboard
             let notificationCenter = NotificationCenter.default
-            notificationCenter.addObserver(self, selector: #selector(keyboardShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-            notificationCenter.addObserver(self, selector: #selector(keyboardHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+            notificationCenter.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+            notificationCenter.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         default:
             break
         }
@@ -46,13 +55,15 @@ class ViewController: UIViewController {
     }
     
     //MARK: adjust for keyboard
-    @objc func keyboardShow(notification: Notification) {
+    @objc func keyboardWillShow(notification: Notification) {
         guard let keyboardValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
-        let keyboadHeight = keyboardValue.cgRectValue.height
-        let bottomSpace = self.view.frame.height - (registerSegmentView.frame.origin.y + registerSegmentView.frame.height)
-        self.view.frame.origin.y -= keyboadHeight - bottomSpace
+        if self.view.frame.origin.y == 0 {
+            let keyboadHeight = keyboardValue.cgRectValue.height
+            let bottomSpace = self.view.frame.height - (registerSegmentView.frame.origin.y + registerSegmentView.frame.height)
+            self.view.frame.origin.y -= keyboadHeight - bottomSpace - 40
+        }
     }
-    @objc func keyboardHide() {
+    @objc func keyboardWillHide() {
         // back to normal view
         self.view.frame.origin.y = 0
     }
